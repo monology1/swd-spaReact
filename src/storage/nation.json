@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Japan",
+        "code":"+81"
+    },
+    {
+        "name":"South Korea",
+        "code":"+82"
+    },
+    {
+        "name":"China",
+        "code":"+86"
+    },
+    {
+        "name":"America",
+        "code":"+1"
+    },
+    {
+        "name":"Thailand",
+        "code":"+66"
+    }
+]
