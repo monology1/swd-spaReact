@@ -75,7 +75,11 @@ export default function User_form() {
   });
 
   //handle submit
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+    //setItem on LocalStorage
+    localStorage.setItem("info", JSON.stringify(data));
+  };
 
   //register onChange
   const registerTitleChange = register("title", { required: true });
@@ -328,7 +332,7 @@ export default function User_form() {
           <Grid item xs={3}>
             <p>Expected Salary:</p>
           </Grid>
-          <Grid item xs={8}>
+          <Grid item xs={5}>
             <TextField
               size="small"
               type={"number"}
@@ -339,11 +343,13 @@ export default function User_form() {
           </Grid>
           <Grid item xs={1}>
             <p>THB</p>
-            </Grid>
+          </Grid>
+          <Grid item xs={3}>
+            <Button color="blue" htmlType="submit">
+              Submit
+            </Button>
+          </Grid>
         </Grid>
-        <Button color="blue" htmlType="submit">
-          Submit
-        </Button>
       </form>
     </div>
   );
